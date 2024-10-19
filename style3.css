@@ -1,0 +1,290 @@
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding:0;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-top{
+    margin: auto;
+    background-color: black;
+    width: 90%;
+    height: 75px;
+}
+
+
+.nav-logo{
+    margin-left: 6%;
+    margin-top: 18px;
+    float: left;
+    width: 40%;
+    height: 75px;
+}
+
+.name{
+    float: left;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin:0;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+
+
+.nav-item li{
+    float: left;
+    list-style-type: none;
+    margin: 0 1%;
+    padding: 16px;
+    padding-top: 23px;
+}
+
+ul {
+    margin: 0;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute; 
+    background: linear-gradient(to bottom, #444, #333); 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown li {
+    width: 150px; 
+    padding: 5px 0; 
+}
+
+nav li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown a {
+    display: block; 
+    padding: 10px 15px; 
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.dropdown a:hover {
+    background-color: #555;
+    border-radius: 3px;
+    transform: scale(1.02); 
+}
+
+
+.about-us {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+
+.about-us h1{
+    text-align: center;
+    color: #3A6D8C;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+}
+
+.glider {
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.glider-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.glider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.glider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.glider-slide h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.glider-slide p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.glider-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev, .next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover{
+        transform: scale(1.02); 
+}
+
+.our-story {
+    margin-top: 50px;
+}
+
+
+.vision-mission {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision, .mission {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    border-bottom: 2px solid #ffcc00; /* Accent color */
+    padding-bottom: 10px;
+}
+
+.our-story h2{
+    color: #333;
+    border-bottom: 2px solid #ffcc00; /* Accent color */
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+.our-values {
+    text-align: center;
+    padding: 40px 20px; 
+    color: rgb(0, 0, 0);
+    margin: 20px 0; 
+}
+
+.our-values h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.our-values ul {
+    list-style: none; 
+    padding: 0;
+    text-align: center;
+}
+
+.our-values li {
+    font-size: 18px;
+    margin: 15px 0; /* Space between list items */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    text-align: center;
+}
+
+.our-values li:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    color: #FFD700; /* Change text color on hover */
+}
+
+.icon {
+    font-size: 24px; /* Size of the icons */
+    margin-right: 10px; /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth color transition for icons */
+}
+
+.our-values li:hover .icon {
+    color: #FFD700; /* Change icon color on hover */
+}
+
+footer{
+    background-color: black;
+    margin-top: -20px;
+    height: 75px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}

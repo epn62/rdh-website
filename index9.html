@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizational Structure</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-top">
+            <div class="nav-logo">
+                <a href="index1.html"><img src="img/logo1.png" alt="logo" class="logo"></a>
+                <a href="index1.html" class="name">PT RDH</a>
+            </div>
+            <div class="nav-item">
+                <li><a href="index1.html">Home</a></li>
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                            <ul class="dropdown">
+                                <li><a href="index2.html">History</a></li> <br>
+                                <li><a href="index3.html">Our Vision and Mission</a></li>
+                                <li><a href="index7.html">Top Management</a></li>
+                                <li><a href="index8.html">Branches</a></li>
+                                <li><a href="index9.html">Organizational Structure</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="index4.html">Products</a></li>
+                    <li><a href="index5.html">Partnership</a></li>
+                    <li><a href="index10.html">Careers</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to Our Organization</h1>
+    </header>
+    
+    <section id="structure" class="structure">
+        <h2>Organizational Structure</h2>
+        <div class="org-chart">
+            <img src="img/director.png" alt="Organizational Structure" class="org-image" onclick="openModal();">
+            <p class="caption">Click on the image for a detailed view of our organizational structure.</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; RDH Distribution 2024. All Rights Reserved.</p>
+    </footer>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal();">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            const caption = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImage.src = "img/director.png"; // Path to the image
+            caption.innerHTML = "Organizational Structure"; // Caption for the image
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vision and Mission</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-top">
+            <div class="nav-logo">
+                <a href="index1.html"><img src="img/logo1.png" alt="logo" class="logo"></a>
+                <a href="index1.html" class="name">PT RDH</a>
+            </div>
+            <div class="nav-item">
+                <li><a href="index1.html">Home</a></li>
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                            <ul class="dropdown">
+                                <li><a href="index2.html">History</a></li> <br>
+                                <li><a href="index3.html">Our Vision and Mission</a></li>
+                                <li><a href="index7.html">Top Management</a></li>
+                                <li><a href="index8.html">Branches</a></li>
+                                <li><a href="index9.html">Organizational Structure</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="index4.html">Products</a></li>
+                    <li><a href="index5.html">Partnership</a></li>
+                    <li><a href="index10.html">Careers</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-us" style="background-image: url('img/10.webp');">
+        <div class="container">
+            <h1>ABOUT US</h1>
+                `<section class="glider">
+                    <div class="glider-container">
+                        <div class="glider-slide">
+                            <img src="img/gd1.png" alt="Glider Image 1">
+                        </div>
+                        <div class="glider-slide">
+                            <img src="img/gd2.png" alt="Glider Image 2">
+                        </div>
+                        <div class="glider-slide">
+                            <img src="img/gd3.png" alt="Glider Image 3">
+                        </div>
+                    </div>
+                    <div class="glider-controls">
+                        <button class="prev">Prev</button>
+                        <button class="next">Next</button>
+                    </div>
+                </section>
+            <p>Welcome to PT RDH, our group mainly thrives on basic food distribution field. 
+                We are passionate about delivering solutions that simplify complex supply chains and enhance business growth. 
+                With a focus on efficiency, reliability, and innovation, we create custom strategies that meet the 
+                diverse needs of our clients.
+                We ensure that products are transported with care, precision, and on time.
+            </p>
+
+            <section class="vision">
+                <h1>Our Vision</h1>
+                <p>To be a leading provider of innovative solutions that empower individuals and organizations to achieve their goals.</p>
+            </section>
+            <section class="mission">
+                <h1>Our Mission</h1>
+                <p>To deliver high-quality products and services that meet the needs of our customers while fostering a culture of excellence and continuous improvement.</p>
+            </section>
+            
+
+            <div class="our-story">
+                <h2>Our Story</h2>
+                <p>PT RDH was founded in 2024 by Robbi, Derin, and Helmi, three entrepreneurs with a shared vision to build a distribution company. Since then, we've grown into a company with a dedicated team to creating innovative solutions.</p>
+            </div>
+            <div class="our-values">
+                <h2>Our Values</h2>
+                <ul>
+                    <li><i class="icon passion"></i> Passion</li>
+                    <li><i class="icon innovation"></i> Innovation</li>
+                    <li><i class="icon global"></i> Global Citizenship</li>
+                    <li><i class="icon teamwork"></i> Teamwork</li>
+                </ul>
+            </div>
+    </section>
+    <script>
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const gliderSlides = document.querySelectorAll('.glider-slide');
+        let currentSlide = 0;
+
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + gliderSlides.length) % gliderSlides.length;
+            updateGlider();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % gliderSlides.length;
+            updateGlider();
+        });
+
+        function updateGlider() {
+            gliderSlides.forEach((slide, index) => {
+                slide.style.display = index === currentSlide ? 'block' : 'none';
+            });
+        }
+    </script>
+    <footer>
+        <p>&copy; RDH Distribution 2024. All Right Reserved.</p>
+    </footer>
+    
+</body>
+</html>

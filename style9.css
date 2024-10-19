@@ -1,0 +1,191 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    top: 0;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-top{
+    margin: auto;
+    background-color: black;
+    width: 90%;
+    height: 75px;
+}
+
+
+.nav-logo{
+    margin-left: 6%;
+    margin-top: 18px;
+    float: left;
+    width: 40%;
+    height: 75px;
+}
+
+.name{
+    float: left;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin:0;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+
+
+.nav-item li{
+    float: left;
+    list-style-type: none;
+    margin: 0 1%;
+    padding: 16px;
+    padding-top: 23px;
+}
+
+ul {
+    margin: 0;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute; 
+    background: linear-gradient(to bottom, #444, #333); 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown li {
+    width: 150px; 
+    padding: 5px 0; 
+}
+
+nav li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown a {
+    display: block; 
+    padding: 10px 15px; 
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.dropdown a:hover {
+    background-color: #555;
+    border-radius: 3px;
+    transform: scale(1.02); 
+}
+
+.structure {
+    text-align: center;
+    margin: 100px 0; /* Adjusted margin for better spacing */
+}
+
+.structure h2{
+    font-size: 40px;
+}
+
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-image {
+    max-width: 80%; /* Responsive image */
+    height: auto;
+    border: 2px solid #3A6D8C; /* Border around the image */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin-bottom: 20px; /* Space below the image */
+    cursor: pointer; /* Pointer cursor for clickable image */
+    transition: transform 0.3s ease;
+}
+
+.org-image:hover{
+    transform: scale(1.05);
+}
+
+.caption {
+    font-style: italic;
+    color: #555; /* Dark gray for the caption */
+}
+
+h2 {
+    margin: 20px 0;
+    color: #3A6D8C; /* Match header color */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Width of the modal image */
+    max-width: 700px; /* Max width of the modal image */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
